@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>날씨 정보 웹앱</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="weather-grid">
+    <div class="container">
+      <h1>날씨 정보</h1>
+      <input type="text" id="cityInput" placeholder="도시명을 입력하세요" />
+      <button onclick="getWeather()">조회</button>
+      <div id="weatherResult"></div>
+    </div>
+    <div class="container fixed-city">
+      <h2>러시아</h2>
+      <div id="moscowWeather"></div>
+    </div>
+    <div class="container fixed-city">
+      <h2>멕시코</h2>
+      <div id="mexicoWeather"></div>
+    </div>
+    <div class="container fixed-city">
+      <h2>브라질</h2>
+      <div id="brazilWeather"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

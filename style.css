@@ -1,0 +1,106 @@
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: url('attached_assets/image_1744621167308.png') center/cover fixed;
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.weather-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.container {
+  background: url('attached_assets/image_1744621167308.png') center/cover;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(255,0,0,0.2);
+  text-align: center;
+  border: 1px solid #ff0000;
+  position: relative;
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 12px;
+  z-index: 0;
+}
+
+.container > * {
+  position: relative;
+  z-index: 1;
+}
+
+.fixed-city {
+  min-height: 200px;
+}
+
+input {
+  padding: 14px;
+  width: 80%;
+  margin-bottom: 10px;
+  border: 2px solid #ff0000;
+  border-radius: 6px;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: #ff0000;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 0, 0, 0.2);
+}
+
+button {
+  padding: 14px 25px;
+  background: linear-gradient(to right, #ff0000, #cc0000);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(to right, #cc0000, #990000);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 0, 0, 0.3);
+}
+
+#weatherResult, #moscowWeather, #mexicoWeather, #brazilWeather {
+  margin-top: 20px;
+}
+
+h1, h2 {
+  color: #ff0000;
+  margin-bottom: 20px;
+}
+
+p {
+  color: #ffffff;
+  padding: 8px;
+  margin: 8px 0;
+  background-color: #1a1a1a;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  border: 1px solid #333333;
+}
+
+p:hover {
+  background-color: #2a2a2a;
+  border-color: #ff0000;
+}
